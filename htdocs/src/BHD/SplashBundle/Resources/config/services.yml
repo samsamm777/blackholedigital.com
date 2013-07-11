@@ -1,0 +1,7 @@
+parameters:
+#    bhd_splash.example.class: BHD\SplashBundle\Example
+
+services:
+#    bhd_splash.example:
+#        class: %bhd_splash.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

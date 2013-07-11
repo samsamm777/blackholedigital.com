@@ -1,0 +1,3 @@
+bhd_splash_homepage:
+    pattern:  /
+    defaults: { _controller: BHDSplashBundle:Default:index }
