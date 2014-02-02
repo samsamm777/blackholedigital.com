@@ -13,25 +13,9 @@
     </head>
     <body>
         <div class="container">
-            
-            <div id="port">
-                <img class="parallax-layer" src="{{ asset('/bundles/bhdsplash/images/logo.png') }}" />
-                <img class="parallax-layer" style="width: 360px; opacity: 0.05;" src="{{ asset('/bundles/bhdsplash/images/logo.png') }}" />
-            </div>
-            
+            <img class="logo" src="{{ asset('/bundles/bhdsplash/images/logo.png') }}" />
             <p>Coming soon.</p>
             <p><a href="http://www.linkedin.com/pub/samuel-hudson/58/a48/500"><img src="{{ asset('/bundles/bhdsplash/images/linkedinIcon.png') }}" /></a></p>
         </div>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script src="{{ asset('/bundles/bhdsplash/js/jquery.parallax.js') }}"></script>
-        <script type="text/javascript">
-            jQuery(document).ready(function(){
-                // Declare parallax on layers
-                jQuery('.parallax-layer').parallax({
-                    mouseport: jQuery("html")
-                });
-            });
-        </script>
     </body>
 </html>

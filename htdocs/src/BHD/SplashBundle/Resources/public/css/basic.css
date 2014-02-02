@@ -12,14 +12,6 @@ body {
 	text-align: center;
 }
 
-/*.container > .logo {
-	margin-left: 8px;
-}*/
-
-#port { 
-	overflow:show; 
-	width:330px; 
-	height:100px;
-	position: relative;
+.container > .logo {
+	margin-left: 6px;
 }
-.parallax-layer { position:absolute; left: 20px; }
