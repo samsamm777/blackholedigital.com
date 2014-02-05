@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Black Hole Digital</title>
+ <link href="http://www.blackholedigital.com/atom.xml" rel="self"/>
+ <link href="http://www.blackholedigital.com/"/>
+ <updated>2014-02-02T01:11:12+00:00</updated>
+ <id>http://www.blackholedigital.com</id>
+ <author>
+   <name>Samuel Hudson</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>New Website!</title>
+   <link href="http://www.blackholedigital.com/2014/02/01/new-website/"/>
+   <updated>2014-02-01T00:00:00+00:00</updated>
+   <id>http://www.blackholedigital.com/2014/02/01/new-website</id>
+   <content type="html">&lt;p&gt;I decided it was time to build a new website. So here we are, back to basics. I hope you like it.&lt;/p&gt;
+
+&lt;h3&gt;Peace out word press&lt;/h3&gt;
+
+&lt;p&gt;I decided that I couldn&amp;#39;t support the Wordpress abomination any longer and had to scrap it. For a seasoned PHP developer, having to cope with Wordpress&amp;#39; template system is such a heartache I couldn&amp;#39;t face it any longer.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s a little snippet taken from one of the templates in Wordpress. Its from a file called &amp;#39;content.php&amp;#39;. So its a PHP file right? Wrong. Its riddled with pieces of html and php all jumbled together so tightly coupled they are practically married.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;php&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* Show the post&amp;#39;s tags, categories, and a comment link. */&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;x&quot;&gt;     &amp;lt;footer class=&amp;quot;entry-meta&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;x&quot;&gt;          &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wp_link_pages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;before&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;div class=&amp;quot;page-links&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Pages:&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;nuwhite&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;after&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;/div&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;x&quot;&gt;                  &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &amp;lt;!-- End if &amp;#39;post&amp;#39; == get_post_type() ?&amp;gt; --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;x&quot;&gt;          &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;edit_post_link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Edit&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;nuwhite&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;x&quot;&gt;&amp;lt;div class=&amp;quot;entry-meta&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;What even is this mess!? PHP is not a markup language, and it saddens me to see php abused like this.&lt;/p&gt;
+
+&lt;p&gt;Sorry for the rant, have a look around my new site and let me know what you think.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Foundry</title>
+   <link href="http://www.blackholedigital.com/2013/08/01/the-foundry/"/>
+   <updated>2013-08-01T00:00:00+01:00</updated>
+   <id>http://www.blackholedigital.com/2013/08/01/the-foundry</id>
+   <content type="html">&lt;p&gt;I&amp;#39;ve started working at &lt;a href=&quot;http://thefoundry.co.uk&quot;&gt;The Foundry&lt;/a&gt;. I&amp;#39;m really excited to be part of such a great company and to work on some great products. Watch this space!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Foundry is a global developer of computer graphics, visual effects (VFX) and 3D design software for the design, visualization and entertainment industries.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+
+</feed>

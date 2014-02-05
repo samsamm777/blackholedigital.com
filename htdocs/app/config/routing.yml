@@ -1,4 +1,0 @@
-bhd_splash:
-    resource: "@BHDSplashBundle/Resources/config/routing.yml"
-    prefix:   /
-
