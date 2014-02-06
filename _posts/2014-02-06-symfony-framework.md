@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependancy Injection
+title: Dependency Injection
 ---
 
 If you're strugging with dependency injection and grasping service driven architecture, then this video is a great start to get your head around the concept.
