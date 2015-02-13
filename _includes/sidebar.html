@@ -17,6 +17,10 @@
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
+      {% for post in paginator.posts %}
+        <a class="sidebar-nav-item{% if page.url == post.url %} active{% endif %}" href="{{ post.url }}">{{post.title}}</a>
+      {% endfor %}
+
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
