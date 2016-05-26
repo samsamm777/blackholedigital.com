@@ -3,10 +3,13 @@
     {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include nav.html %}
-    {% include header.html %}
-    {% include about.html %}
-    {% include blog-info.html %}
-    {% include contact.html %}
+    <section id="blog" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                {{ content }}
+            </div>
+        </div>
+    </section>
     {% include footer.html %}
     {% include js.html %}
     </body>

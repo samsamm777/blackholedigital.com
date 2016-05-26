@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: {{ site.color.links }};
 }
 
 .light {
@@ -252,16 +252,11 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.blog-info-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: {{ site.color.primary-dark }};
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-color: #151515;
 }
 
 #map {
@@ -342,6 +337,11 @@ footer p {
     margin: 0;
 }
 
+.copyright p {
+    font-size: 13px;
+    color: #666;
+}
+
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
@@ -364,4 +364,22 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+article {
+    border: 1px solid #404040;
+    background-color: #151515;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.entry img {
+    width: 100%;
+}
+
+.entry img + em {
+    color: #666;
 }

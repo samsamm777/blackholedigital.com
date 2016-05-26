@@ -7,7 +7,7 @@ description: "Black Hole Digital is an independant game studio from london, uk. 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#800000'
 
 # Footer settings
 footer: Black Hole Digital
@@ -22,3 +22,8 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+gems: [jekyll-paginate]
