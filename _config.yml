@@ -1,26 +1,24 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Site settings
+title: Black Hole Digital
+email: contact@blackholedigital.com
+url: https://www.blackholedigital.com
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
 
-# Setup
-title:            Samuel Hudson
-tagline:          'Engineering the Web by Samuel Hudson'
-description:      'I am a software engineer from London, UK. I currently work at <a href="http://www.thefoundry.co.uk/">The Foundry</a>, building applications for the vfx and design industry. Follow <a href="http://twitter.com/samsamm">@samsamm</a>'
-url:              http://www.blackholedigital.com
-baseurl:          /
+# Footer settings
+footer: Black Hole Digital
 
-author:
-  name:           'Samuel Hudson'
-  url:            https://twitter.com/samsamm
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/blackholedigital
+  - title: facebook
+    url: https://facebook.com/blackholedigital
 
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/samsamm777
+# Build settings
+markdown: kramdown
+permalink: pretty
